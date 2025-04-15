@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Spring Boot Backend",
+      "request": "launch",
+      "mainClass": "university.management.system.Application",
+      "projectName": "system"
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Live Server Frontend",
+      "program": "${workspaceFolder}/frontend/index.html",
+      "cwd": "${workspaceFolder}/frontend",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["live-server", "--port=5500"]
+    }
+  ]
+}
